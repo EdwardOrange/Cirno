@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cirno</title>
+  <!-- 本地 Materialize CSS -->
+  <link href="css/materialize.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      width: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: auto;
+    }
+    .input-field {
+      margin-bottom: 20px;
+    }
+    .note {
+      font-size: 18px;
+      color: #666;
+      margin-top: 10px;
+    }
+    .noteee {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
+    .label-large {
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h5>Cirno ⑨！</h5>
+    <p class="noteee">此插件用于解决在知网手动选中500个文章使我的手很累的严重问题</p>
+    <button id="bakabaka" class="btn waves-effect waves-light">将单页显示文章数量改为50个（要点两下）</button>
+    <br>
+    <br>
+    <button id="click-checkbox-button" class="btn waves-effect waves-light">点击全选</button>
+    <button id="click-next-page-button" class="btn waves-effect waves-light">点击下一页</button>
+    <div class="input-field">
+      <input type="number" id="delay-input" value="3000" min="0">
+      <label for="delay-input" class="label-large">下方操作延时 (毫秒):</label>
+    </div>
+    <button id="444" class="btn waves-effect waves-light">对当前及后方十页进行选中操作</button>
+    <p class="note">注释: 延时时间依据网络环境与CNKI服务器是否抽风决定，理想情况是在页面加载完成后进行下一步</p>
+    <p class="noteee">叫做Cirno是因为这个角色是baka而CNKI手动选择很累是baka我也是baka这整个项目都是baka</p>
+    <p class="noteee">本项目基于bug运行</p>
+  </div>
+  <!-- 本地 Materialize JS -->
+  <script src="js/materialize.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
